@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Poppins:ital@0;1&family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/mediaquery.css">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <title>Joy Buolamwini</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#secOne">
+                    <h1>Joy Buolamwini</h1>
+                </a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="#secTwo">Saiba Mais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#secThree">Coded Bias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#secFour">AJL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#container-slider">Vídeos</a></li>
+                </ul>
+            </div>
+            <div class="burguer"> 
+                <button onclick="menuShow()"><img class="icon-burguer" src="assets/icons/menu2.svg" alt="Botão Menu"></button> 
+            </div>
+
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#secTwo">Saiba Mais</a></li>
+                <li class="nav-item"><a class="nav-link" href="#secThree">Coded Bias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#secFour">AJL</a></li>
+                <li class="nav-item"><a class="nav-link" href="#container-slider">Vídeos</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="secOne">
+            <picture class="caixa-img">
+                <source media="(max-width: 992px)" srcset="assets/images/joy01-medio.png" type="image/png">
+                <img id="joy1" src="assets/images/joy01.png" alt="Foto Joy Buolamwini">
+            </picture>
+            <article class="caixa-info">
+                <h1>Joy Buolamwini</h1>
+                <h2>poetisa do código, filha <br> da arte e da ciência.</h2>
+                <a href="#secTwo"><button class="btnSaibaMais">SAIBA MAIS</button></a>
+            </article>
+        </section>
+        <section id="secTwo">
+            <article>
+                <p>
+                    Cientista da computação, mestre em aprendizado e tecnologia, e pesquisadora do Instituto de
+                    Tecnologia de Massachusetts (MIT). Por meio da arte e da pesquisa ela estuda as implicações sociais
+                    da inteligência artificial (IA). Ela atua no Global Tech Panel convocado pelo vice-presidente da
+                    Comissão Europeia para aconselhar líderes mundiais e executivos de tecnologia sobre maneiras de
+                    reduzir os danos da IA. <br>
+                    Durante o desenvolvimento de um projeto de realidade aumentada “Aspire Mirror”, Buolamwini percebeu
+                    que o software comum de reconhecimento facial que havia pegado da internet não detectava seu rosto,
+                    mas os rostos dos seus colegas de pele mais clara ou ao colocar uma máscara branca, o software
+                    detectava sem problemas. Esse acontecimento levantou um questionamento com relação aos algoritmos
+                    usados pelos softwares de reconhecimento facial, levando Buolamwini a realizar um estudo sobre o
+                    assunto. <br>
+                    Por meio da sua tese no MIT em 2017, ela avaliou três sistemas de análise facial e encontrou um viés
+                    nos algoritmos de analise facial automatizado, no qual as mulheres de pele mais escura são o grupo
+                    mais incorretamente classificado.
+                </p>
+            </article>
+            <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/joy02-pqno.png" type="image/png">
+                <img src="assets/images/joy02.png" alt="Foto Joy">
+            </picture>
+        </section>
+        <section id="secThree">
+            <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/coded-bias-pqno.png" type="image/png">
+                <img src="assets/images/coded-bias.png" alt="Mascara branca com texto Coded Bias">
+            </picture>
+            <p>
+                O documentário “Coded Bias” (2020), disponível na Netflix, mostra toda a jornada de Buolamwini na
+                descoberta do problema de reconhecimento facial pelos sistemas, como as tecnologias trabalham com
+                algoritmos discriminatórios no qual máquinas são ensinadas (machine learning) por meio de exemplos de
+                rostos pouco diversos e o impacto que essas ferramentas podem trazer na sociedade.
+            </p>
+        </section>
+        <section id="secFour">
+            <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/ajl-logo-pqno.png" type="image/png">
+                <img src="assets/images/ajl-logo1.png" alt="Logotipo organização AJL">
+            </picture>
+            <p>
+                Fundadora da Algorithmic Justice League (AJL), uma organização sem fins lucrativos, com a finalidade de
+                aumentar a conscientização sobre os impactos sociais da IA e criar tecnologias mais igualitárias e
+                responsáveis.
+            </p>
+        </section>
+        <section id="container-slider">
+            <button id="prev-btn"><img src="assets/icons/arrow.svg" alt="Botão anterior"></button>
+            <article>
+
+                <div class="player" id="vidZero"><iframe class="slider show" width="700" height="394"
+                        src="https://www.youtube.com/embed/UG_X_7g63rY" title="YouTube video player" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                <div class="player" id="vidOne"><iframe class="slider" width="700" height="394"
+                        src="https://www.youtube.com/embed/TWWsW1w-BVo" title="YouTube video player" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                <div class="player" id="vidTwo"><iframe class="slider" width="700" height="394"
+                        src="https://www.youtube.com/embed/QxuyfWoVV98" title="YouTube video player" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                <div class="player" id="vidThree"><iframe class="slider" width="700" height="394"
+                        src="https://www.youtube.com/embed/BDDGhNHtr-c" title="YouTube video player" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+            </article>
+            <button id="next-btn"><img src="assets/icons/arrow.svg" alt="Botão próximo"></button>
+        </section>
+        <script src="teste.js" defer></script>
+    </main>
+
+    <footer>
+        <p>Site criado por Natália Volpi</p>
+        <a href="https://www.linkedin.com/in/natália-volpi-b9bb61268/" target="_blank"><img
+                src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://github.com/nataliavolpi" target="_blank"><img src="assets/icons/github.svg" alt="GitHub"></a>
+        <a href="mailto:nataliavolpi25@gmail.com" target="_blank"><img src="assets/icons/email.svg" alt="E-mail"></a>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

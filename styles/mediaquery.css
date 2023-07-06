@@ -1,0 +1,122 @@
+:root {
+  --font0: 'Archivo', sans-serif;
+  --font1: 'Poppins', sans-serif;
+  --font2: 'Source Sans 3', sans-serif;
+
+  --color0: #F4DAC7;
+  --color1: #ff6b00;
+  --color2: #FF9170;
+  --color3: #FFE3BA;
+  --color4: #650000;
+  --color5: #FFCE6C;
+  --color6: #FFEEDC;
+  --color7: #BA6565;
+  --color8: #FFA64B;
+  --color9: #FFCF9E;
+  --color10: #E27200;
+  --color11: #D65C5C;
+}
+
+/*MENU HAMBURGUER*/
+@media screen and (max-width:768px) {
+  .nav-bar{
+    padding: .3rem;
+  }
+
+  .nav-item{
+      display: none;
+  }
+
+  .logo a{
+    font-size: 1em;
+  }
+
+  .burguer{
+    padding: 0;
+    display: block; 
+  }
+
+  .burguer button{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  }
+
+  .burguer button:active{
+    transform: translateY(1px);
+  }
+
+  .mobile-menu ul{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+
+  .mobile-menu .nav-item{
+      display: block;
+      padding-top: 1.2rem;
+  }
+
+  .open{
+    display: block;
+  }
+}
+
+/*CELULAR*/
+@media screen and (max-width: 768px) {
+  /*Section One*/
+  #secOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #joy1{
+    margin: auto;
+    width: 85vw;
+  }
+
+  .caixa-info{
+    top: -2rem;
+    right: auto;
+    width: 20.3rem;
+    height: 12.8rem;
+  }
+
+  .caixa-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .caixa-info h2{
+    font-size: .95rem;
+  }
+
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1120px) {
+  /*Section One*/
+  #joy1{
+    width: 63vw;
+  }  
+
+  .caixa-info{
+    padding: 1.06rem 1.44rem;
+    top: 6rem;
+    right: 4.56rem;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .caixa-info h1 {
+    font-size: 1.6rem;
+  }
+
+  .caixa-info h2{
+    font-size: 1rem;
+  }
+}
+

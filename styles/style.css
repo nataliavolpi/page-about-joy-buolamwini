@@ -1,0 +1,210 @@
+:root {
+    --font0: 'Archivo', sans-serif;
+    --font1: 'Poppins', sans-serif;
+    --font2: 'Source Sans 3', sans-serif;
+
+    --color0: #F4DAC7;
+    --color1: #ff6b00;
+    --color2: #FF9170;
+    --color3: #FFE3BA;
+    --color4: #650000;
+    --color5: #FFCE6C;
+    --color6: #FFEEDC;
+    --color7: #BA6565;
+    --color8: #FFA64B;
+    --color9: #FFCF9E;
+    --color10: #E27200;
+    --color11: #D65C5C;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font0);
+}
+
+body{
+    background-color: var(--color0);
+}
+
+main{
+    background-color: var(--color0);
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/*Header*/
+header{
+    position: fixed;
+    width: 100%;
+    background-color: var(--color0);
+    box-shadow: 0px 1px 6px #d8c1b08f;
+    font-family: var(--font2);
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.logo a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color1);
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.81);
+    font-size: 1.2em;
+}
+
+.logo a:hover{
+    text-shadow: 0px 0px 2px #ff6a00e3;
+    transition: 1s;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-family: var(--font2);
+    color: white;
+    text-shadow: 0px 0px 2px rgba(190, 96, 0, 0.81);
+    font-size: 1.3em;
+}
+
+.nav-link:hover{
+    text-shadow: 0px 0px 3px rgba(104, 52, 0, 0.895);
+}
+
+.burguer{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+/*Section One*/
+#secOne {
+    border: 5px solid black;
+    margin-top: 70px;
+    display: flex;
+}
+
+#joy1{
+    border: 5px solid red;
+    margin-left: 2rem;
+}
+
+.caixa-info{
+    position: relative;
+    top: 7.25rem;
+    right: 6.56rem;
+    border: 5px solid blue;
+    width: 25.375rem;
+    height: 15.125rem;
+    font-family: var(--font1);
+    flex-shrink: 0;
+    padding: 2.06rem 2.44rem;
+    background: var(--color2);
+    box-shadow: 5px 4px 4px 0px rgba(166, 1, 1, 0.25);
+    text-align: center;
+}
+
+.caixa-info h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 2.25rem;
+    letter-spacing: 0.225rem;
+}
+
+.caixa-info h2{
+    color: var(--color3);
+    text-align: center;
+    font-size: 1.275rem;
+    font-style: italic;
+    letter-spacing: 0.1375rem;
+    margin-top: 1rem;
+    margin-bottom: 2.38rem;
+}
+
+.caixa-info .btnSaibaMais{
+    font-family: var(--font2);
+    width: 6.25rem;
+    height: 1.5625rem;
+    background-color: var(--color0);
+    color: var(--color4);
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+    border: none;
+    box-shadow: 2px 2px 0px 0px rgba(243, 207, 152, 0.78);
+    cursor: pointer;
+}
+
+.caixa-info .btnSaibaMais:hover{
+    opacity: 1;
+    background-color: var(--color6);
+    transition: .2s;
+}
+
+.caixa-info .btnSaibaMais:active{
+    transform: translateY(1px);
+}
+
+/*Container dos vídeos*/
+#container-slider{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.player{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;   
+}
+
+.slider{
+    display: none;
+}
+
+.slider.show{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    transition: opacity .2s;
+}
+
+#prev-btn, #next-btn{
+    width: 8vw;
+    height: 8vh;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-btn{
+    transform: rotate(180deg);
+}
+
+button:hover{
+    opacity: .5;
+}
