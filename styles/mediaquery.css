@@ -72,6 +72,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    min-height: 85vh;
   }
 
   #joy1{
@@ -80,19 +81,78 @@
   }
 
   .caixa-info{
-    top: -2rem;
+    top: -1rem;
     right: auto;
-    width: 20.3rem;
-    height: 12.8rem;
+    padding: 0;
+    width: 13rem;
+    height: 9rem;
   }
 
   .caixa-info h1 {
-    font-size: 1.5rem;
+    font-size: .98rem;
+    margin: 1rem 0;
   }
 
   .caixa-info h2{
-    font-size: .95rem;
+    font-size: .80rem;
+    margin: 1rem 0;
   }
+
+  .caixa-info .btnSaibaMais{
+    width: 5.2rem;
+    height: 1.5rem;
+    font-size: 0.70rem;
+    margin: 0;
+  }
+
+  /*Section Two*/
+#secTwo{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+.sobre-container{
+  width: 18rem;
+}
+
+.sobre-container p{
+  font-size: .769rem;
+  font-weight: normal;
+}
+
+.sobre-img{
+  margin: 1rem 0;
+  padding: 2rem 2rem;
+}
+
+/*Section Three*/
+#secThree{
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-coded{
+  margin: 0;
+  width: 18rem;
+  height: 27rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.01rem;
+}
+
+.texto-coded p{
+  width: 15rem;
+  font-size: .88rem;
+}
+
+#coded{
+  margin: 0;
+  margin-top: 1rem;
+  display: flex;
+}
 
 }
 
@@ -105,7 +165,6 @@
 
   .caixa-info{
     padding: 1.06rem 1.44rem;
-    top: 6rem;
     right: 4.56rem;
     width: fit-content;
     height: fit-content;
@@ -117,6 +176,26 @@
 
   .caixa-info h2{
     font-size: 1rem;
+  }
+
+  /*Section Two*/
+  #joy2{
+    width: 35vw;
+  }
+
+  .sobre-container p{
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  /*Section Three*/
+  .texto-coded p{
+    width: 22rem;
+    font-size: 1rem;
+  }
+  
+  #coded{
+    width: 42vw;
   }
 }
 

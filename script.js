@@ -7,6 +7,7 @@ window.addEventListener('scroll', function() {
   let currentPosition = window.scrollY
   if (mainPosition >= currentPosition) {
     header.style.top = "0px"
+    header.style.zIndex = "10" //garantir que nenhum elemento fique por cima do cabeçalho
   } else {
     header.style.top = "-70px"
   }
@@ -65,3 +66,5 @@ function prevPlayer() {
 
 btnNext.addEventListener('click', nextPlayer)
 btnPrev.addEventListener('click', prevPlayer)
+
+//Adaptar pra celulares (max-width: 768px)

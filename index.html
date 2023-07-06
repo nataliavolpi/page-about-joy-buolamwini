@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Poppins:ital@0;1&family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="styles/mediaquery.css">
+    <link rel="stylesheet" href="styles/glitchbutn.css">
     <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <title>Joy Buolamwini</title>
 </head>
@@ -24,7 +25,7 @@
             </div>
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a class="nav-link" href="#secTwo">Saiba Mais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#secTwo">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="#secThree">Coded Bias</a></li>
                     <li class="nav-item"><a class="nav-link" href="#secFour">AJL</a></li>
                     <li class="nav-item"><a class="nav-link" href="#container-slider">Vídeos</a></li>
@@ -38,7 +39,7 @@
 
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a class="nav-link" href="#secTwo">Saiba Mais</a></li>
+                <li class="nav-item"><a class="nav-link" href="#secTwo">Sobre</a></li>
                 <li class="nav-item"><a class="nav-link" href="#secThree">Coded Bias</a></li>
                 <li class="nav-item"><a class="nav-link" href="#secFour">AJL</a></li>
                 <li class="nav-item"><a class="nav-link" href="#container-slider">Vídeos</a></li>
@@ -58,51 +59,61 @@
             </article>
         </section>
         <section id="secTwo">
-            <article>
+            <article class="sobre-container">
                 <p>
                     Cientista da computação, mestre em aprendizado e tecnologia, e pesquisadora do Instituto de
                     Tecnologia de Massachusetts (MIT). Por meio da arte e da pesquisa ela estuda as implicações sociais
                     da inteligência artificial (IA). Ela atua no Global Tech Panel convocado pelo vice-presidente da
                     Comissão Europeia para aconselhar líderes mundiais e executivos de tecnologia sobre maneiras de
-                    reduzir os danos da IA. <br>
+                    reduzir os danos da IA. 
+                    <br><br>
                     Durante o desenvolvimento de um projeto de realidade aumentada “Aspire Mirror”, Buolamwini percebeu
                     que o software comum de reconhecimento facial que havia pegado da internet não detectava seu rosto,
                     mas os rostos dos seus colegas de pele mais clara ou ao colocar uma máscara branca, o software
                     detectava sem problemas. Esse acontecimento levantou um questionamento com relação aos algoritmos
                     usados pelos softwares de reconhecimento facial, levando Buolamwini a realizar um estudo sobre o
-                    assunto. <br>
+                    assunto. 
+                    <br><br>
                     Por meio da sua tese no MIT em 2017, ela avaliou três sistemas de análise facial e encontrou um viés
                     nos algoritmos de analise facial automatizado, no qual as mulheres de pele mais escura são o grupo
                     mais incorretamente classificado.
                 </p>
             </article>
-            <picture>
-                <source media="(max-width: 950px)" srcset="assets/images/joy02-pqno.png" type="image/png">
-                <img src="assets/images/joy02.png" alt="Foto Joy">
-            </picture>
+            <div class="sobre-img">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="assets/images/joy02-pqno.png" type="image/png">
+                    <img id="joy2" src="assets/images/joy02.png" alt="Foto Joy">
+                </picture>
+            </div>
         </section>
         <section id="secThree">
             <picture>
-                <source media="(max-width: 950px)" srcset="assets/images/coded-bias-pqno.png" type="image/png">
-                <img src="assets/images/coded-bias.png" alt="Mascara branca com texto Coded Bias">
+                <source media="(max-width: 768px)" srcset="assets/images/coded-bias-pqno.png" type="image/png">
+                <img id="coded" src="assets/images/coded-bias.png" alt="Mascara branca com texto Coded Bias">
             </picture>
+            <div class="texto-coded">
             <p>
                 O documentário “Coded Bias” (2020), disponível na Netflix, mostra toda a jornada de Buolamwini na
                 descoberta do problema de reconhecimento facial pelos sistemas, como as tecnologias trabalham com
                 algoritmos discriminatórios no qual máquinas são ensinadas (machine learning) por meio de exemplos de
                 rostos pouco diversos e o impacto que essas ferramentas podem trazer na sociedade.
             </p>
+                <a href="https://youtu.be/jZl55PsfZJQ" target="_blank"><button class="trailer-btn">Trailer</button></a>
+            </div>
         </section>
         <section id="secFour">
             <picture>
-                <source media="(max-width: 950px)" srcset="assets/images/ajl-logo-pqno.png" type="image/png">
-                <img src="assets/images/ajl-logo1.png" alt="Logotipo organização AJL">
+                <source media="(max-width: 770px)" srcset="assets/images/ajl-logo-pqno.png" type="image/png">
+                <img id="org-img" src="assets/images/ajl-logo1.png" alt="Logotipo organização AJL">
             </picture>
-            <p>
-                Fundadora da Algorithmic Justice League (AJL), uma organização sem fins lucrativos, com a finalidade de
-                aumentar a conscientização sobre os impactos sociais da IA e criar tecnologias mais igualitárias e
-                responsáveis.
-            </p>
+            
+            <div class="ajl">
+                <p>
+                    Fundadora da <a href="https://www.ajl.org" target="_blank">Algorithmic Justice League</a> (AJL), uma organização sem fins lucrativos, com a finalidade de
+                    aumentar a conscientização sobre os impactos sociais da IA e criar tecnologias mais igualitárias e
+                    responsáveis.
+                </p>
+            </div>
         </section>
         <section id="container-slider">
             <button id="prev-btn"><img src="assets/icons/arrow.svg" alt="Botão anterior"></button>
@@ -135,7 +146,19 @@
         <a href="mailto:nataliavolpi25@gmail.com" target="_blank"><img src="assets/icons/email.svg" alt="E-mail"></a>
     </footer>
 
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+
     <script src="script.js" defer></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
 </body>
 
 </html>
