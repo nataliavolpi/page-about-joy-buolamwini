@@ -2,6 +2,7 @@
     --font0: 'Archivo', sans-serif;
     --font1: 'Poppins', sans-serif;
     --font2: 'Source Sans 3', sans-serif;
+    --font3: 'Rowdies', cursive;
 
     --color0: #F4DAC7;
     --color1: #ff6b00;
@@ -22,18 +23,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font0);
 }
 
-body{
+html, body{
     background-color: #fbf2ed92;
     min-height: 100vh;
+    scroll-behavior: smooth;
+    transition: all 0.5s;
 }
 
-main{
-    max-width: 70vw;
-    margin: 0 auto;
-    padding: 1rem;
+p{
+    font-family: var(--font0);
 }
 
 /*Header*/
@@ -41,8 +41,8 @@ header{
     position: sticky;
     width: 100%;
     background-color: var(--color0);
-    box-shadow: 0px 1px 6px #d8c1b08f;
-    font-family: var(--font2);
+    box-shadow: 0px 1px 6px #bba4948f;
+    font-family: var(--font3);
     float: none;
     z-index: 1;
 }
@@ -52,6 +52,9 @@ header{
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
+    padding: 18px 40px;
+    transition: all 0.5s;
+    height: 80px;
 }
 
 .logo a{
@@ -59,12 +62,13 @@ header{
     justify-content: center;
     text-decoration: none;
     color: var(--color1);
-    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.81);
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.792);
     font-size: 1.2em;
+    letter-spacing: 0.1rem;
 }
 
 .logo a:hover{
-    text-shadow: 0px 0px 2px #ff6a00e3;
+    text-shadow: 0px 0px 3px #dcd43fe3;
     transition: 1s;
 }
 
@@ -81,13 +85,14 @@ header{
 .nav-link{
     text-decoration: none;
     font-family: var(--font2);
-    color: white;
-    text-shadow: 0px 0px 2px rgba(190, 96, 0, 0.81);
+    color: #ffff;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px rgba(117, 51, 51, 0.953);
     font-size: 1.3em;
 }
 
 .nav-link:hover{
-    text-shadow: 0px 0px 3px rgba(104, 52, 0, 0.895);
+    text-shadow: 0px 0px 4px rgba(104, 52, 0, 0.895);
 }
 
 .burguer{
@@ -104,6 +109,7 @@ header{
     justify-content: center;
     align-items: center;
     min-height: 70vh;
+    margin: 2rem 0;
 }
 
 .caixa-img{
@@ -118,8 +124,8 @@ header{
 .caixa-info{
     position: relative;
     right: 5.56rem;
-    width: 25.375rem;
-    height: 15.125rem;
+    width: 26rem;
+    height: 16rem;
     font-family: var(--font1);
     flex-shrink: 0;
     padding: 2.06rem 2.44rem;
@@ -173,40 +179,46 @@ header{
 /*Section Two*/
 #secTwo{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    min-height: 70vh;
     background-color: #FAD49A;
+    min-height: 70vh;
+    margin: 3rem 0;
 }
 .sobre-container{
-    width: 32.375rem;
-    height: 29.1875rem;
+    width: 35rem;
+    height: 35rem;
+    margin-right: 5%;
 }
 
 .sobre-container p{
     color: var(--color4);
     text-align: justify;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 600;
     letter-spacing: 0.08rem;
+    line-height: 1.5;
 }
 
 .sobre-img{
+    margin-left: 1rem;
     padding: 12rem 2rem;
     background-color: var(--color6);
 }
 
 /*Section Three*/
 #secThree{
+    margin: 3rem 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     min-height: 70vh;
     background-color: #000;
 }
 
 .texto-coded{
-    width: 30rem;
+    margin-left: 10%;
+    width: 35rem;
     height: 30rem;
     display: flex;
     flex-direction: column;
@@ -216,16 +228,16 @@ header{
 
 .texto-coded p{
     margin-bottom: 2.5rem;
-    width: 28rem;
+    width: 30rem;
     color: #FFF;
     text-align: justify;
-    font-size: 1.125rem;
-    letter-spacing: 0.1125rem;
+    font-size: 1.145rem;
+    letter-spacing: 0.025rem;
+    line-height: 1.5;
 }
 
 /*Section Four*/
 #secFour{
-    border: 5px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,18 +247,18 @@ header{
 }
 
 #org-img{
-    border: 5px solid blue;
-    margin: 1rem 0 6rem 0;
+    margin: 1rem 0 2rem 0;
 }
 
 .ajl{
-    border: 5px solid greenyellow;
     width: 33.625rem;
-    height: 9.375rem;
+    height: 15rem;
     color: #0B0B0B;
     text-align: justify;
-    font-size: 1.25rem;
-    letter-spacing: 0.125rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.055rem;
+    line-height: 1.5;
 }
 
 .ajl a{
@@ -258,7 +270,7 @@ header{
 #container-slider{
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     align-items: center;
     justify-content: center;
 }
@@ -296,4 +308,30 @@ header{
 
 button:hover{
     opacity: .5;
+}
+
+/*Rodapé*/
+footer{
+    background-color: var(--color9);
+    max-height: 3.5rem;
+    font-size: 0.8em;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+footer > p{
+    color: var(--color10);
+    font-family: var(--font1);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-align: center;
+    margin-right: 5%;
+}
+
+.icon-footer{
+    margin-right: 1%;
 }

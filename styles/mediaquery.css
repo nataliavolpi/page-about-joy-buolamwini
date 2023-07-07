@@ -65,6 +65,12 @@
 
 /*CELULAR*/
 @media screen and (max-width: 768px) {
+
+  body{
+    background-color: #fdfdfde9;
+    min-height: 100vh;
+}
+
   /*Section One*/
   #secOne{
     display: flex;
@@ -107,6 +113,7 @@
 
   /*Section Two*/
 #secTwo{
+  margin: 0;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-evenly;
@@ -114,7 +121,9 @@
   align-content: center;
 }
 .sobre-container{
-  width: 18rem;
+  margin: 0;
+  margin-bottom: 5%;
+  width: 20rem;
 }
 
 .sobre-container p{
@@ -124,7 +133,7 @@
 
 .sobre-img{
   margin: 1rem 0;
-  padding: 2rem 2rem;
+  padding: 2rem;
 }
 
 /*Section Three*/
@@ -144,7 +153,7 @@
 }
 
 .texto-coded p{
-  width: 15rem;
+  width: 16rem;
   font-size: .88rem;
 }
 
@@ -153,6 +162,47 @@
   margin-top: 1rem;
   display: flex;
 }
+
+/*Section Four*/
+#org-img{
+  margin-top: 50%;
+}
+
+.ajl{
+  width: 16rem;
+  height: 40vh;
+  font-size: .88rem;
+  font-weight: normal;
+  flex-grow: 2;
+}
+
+/*Container dos vídeos*/
+#container-slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.player, .slider, .slider.show{
+  width: 18.3rem;
+  height: fit-content;
+}
+
+#prev-btn, #next-btn{
+  margin: 0;
+  padding: 0;
+}
+
+  /*Rodapé*/
+  footer > p{
+    font-size: .8rem;
+    margin-right: 5%;
+  }
+  
+  .icon-footer{
+    margin-right: 1.2%;
+  }
 
 }
 
@@ -183,14 +233,22 @@
     width: 35vw;
   }
 
+  .sobre-container{
+    margin: 0 3%;
+    height: auto;
+  }
+
   .sobre-container p{
-    font-size: 1rem;
-    font-weight: normal;
+    font-size: 100%;
   }
 
   /*Section Three*/
+  .texto-coded{
+    margin: 0;
+  }
+
   .texto-coded p{
-    width: 22rem;
+    width: 25rem;
     font-size: 1rem;
   }
   

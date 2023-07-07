@@ -9,7 +9,7 @@ window.addEventListener('scroll', function() {
     header.style.top = "0px"
     header.style.zIndex = "10" //garantir que nenhum elemento fique por cima do cabeçalho
   } else {
-    header.style.top = "-70px"
+    header.style.top = "-80px"
   }
   mainPosition = currentPosition
 })
@@ -67,4 +67,4 @@ function prevPlayer() {
 btnNext.addEventListener('click', nextPlayer)
 btnPrev.addEventListener('click', prevPlayer)
 
-//Adaptar pra celulares (max-width: 768px)
+//Adaptar player vídeo pra celulares (max-width: 768px)
