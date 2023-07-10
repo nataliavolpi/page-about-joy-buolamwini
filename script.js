@@ -67,4 +67,17 @@ function prevPlayer() {
 btnNext.addEventListener('click', nextPlayer)
 btnPrev.addEventListener('click', prevPlayer)
 
-//Adaptar player vídeo pra celulares (max-width: 768px)
+//Alterar dark ligth mode
+let icon = document.querySelector('#mode-icon')
+
+function theme(){
+  document.body.classList.toggle("dark-theme")
+
+  if(document.body.classList.contains("dark-theme")){
+    icon.src = "assets/icons/sun.svg"
+  } else {
+    icon.src = "assets/icons/moon.svg"
+  }
+}
+
+icon.addEventListener('click', theme)

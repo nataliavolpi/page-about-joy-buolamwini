@@ -1,22 +1,3 @@
-:root {
-  --font0: 'Archivo', sans-serif;
-  --font1: 'Poppins', sans-serif;
-  --font2: 'Source Sans 3', sans-serif;
-
-  --color0: #F4DAC7;
-  --color1: #ff6b00;
-  --color2: #FF9170;
-  --color3: #FFE3BA;
-  --color4: #650000;
-  --color5: #FFCE6C;
-  --color6: #FFEEDC;
-  --color7: #BA6565;
-  --color8: #FFA64B;
-  --color9: #FFCF9E;
-  --color10: #E27200;
-  --color11: #D65C5C;
-}
-
 /*MENU HAMBURGUER*/
 @media screen and (max-width:768px) {
   .nav-bar{
@@ -67,7 +48,6 @@
 @media screen and (max-width: 768px) {
 
   body{
-    background-color: #fdfdfde9;
     min-height: 100vh;
 }
 
