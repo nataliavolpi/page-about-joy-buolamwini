@@ -50,9 +50,7 @@ html, body{
     transition: all 0.8s;
 }
 
-p{
-    font-family: var(--font0);
-}
+p{ font-family: var(--font0); }
 
 /*Header*/
 header{
@@ -84,10 +82,7 @@ header{
     letter-spacing: 0.1rem;
 }
 
-.logo a:hover{
-    text-shadow: 0px 0px 3px #973f0096; 
-    transition: 1s;
-}
+.logo a:hover{ text-shadow: 0px 0px 3px #973f0096; transition: 1s; }
 
 .nav-list, .nav-list ul{
     display: flex;
@@ -96,9 +91,7 @@ header{
     list-style: none;
 }
 
-.nav-item{
-    margin: 0 20px;
-}
+.nav-item{ margin: 0 20px; }
 
 #mode-icon{
     margin: 0 5px;
@@ -115,17 +108,11 @@ header{
     font-size: 1.2em;
 }
 
-.nav-link:hover{
-    text-shadow: 0px 0px 4px rgba(104, 52, 0, 0.895);
-}
+.nav-link:hover{ text-shadow: 0px 0px 4px rgba(104, 52, 0, 0.895); }
 
-.burguer{
-    display: none;
-}
+.burguer{ display: none; }
 
-.mobile-menu{
-    display: none;
-}
+.mobile-menu{ display: none; }
 
 /*Section One*/
 #secOne {
@@ -136,14 +123,9 @@ header{
     margin: 2rem 0;
 }
 
-.caixa-img{
-    display: flex;
-    align-items: center;
-}
+.caixa-img{ display: flex; align-items: center; }
 
-#joy1{
-    margin-left: 6rem;
-}
+#joy1{ margin-left: 6rem; }
 
 .caixa-info{
     position: relative;
@@ -196,9 +178,7 @@ header{
     transition: .2s;
 }
 
-.caixa-info .btnSaibaMais:active{
-    transform: translateY(1px);
-}
+.caixa-info .btnSaibaMais:active{ transform: translateY(1px); }
 
 /*Section Two*/
 #secTwo{
@@ -270,9 +250,7 @@ header{
     background-color: var(--color8);
 }
 
-#org-img{
-    margin: 1rem 0 2rem 0;
-}
+#org-img{ margin: 1rem 0 2rem 0; }
 
 .ajl{
     width: 33.625rem;
@@ -285,10 +263,7 @@ header{
     line-height: 1.5;
 }
 
-.ajl a{
-    text-decoration: none;
-    color: var(--color4);
-}
+.ajl a{ text-decoration: none; color: var(--color4); }
 
 /*Container dos vídeos*/
 #container-slider{
@@ -307,9 +282,7 @@ header{
     width: 700px;   
 }
 
-.slider{
-    display: none;
-}
+.slider{ display: none; }
 
 .slider.show{
     display: flex;
@@ -326,13 +299,9 @@ header{
     cursor: pointer;
 }
 
-#prev-btn{
-    transform: rotate(180deg);
-}
+#prev-btn{ transform: rotate(180deg); }
 
-button:hover{
-    opacity: .5;
-}
+button:hover{ opacity: .5; }
 
 /*Rodapé*/
 footer{
@@ -356,6 +325,4 @@ footer > p{
     margin-right: 5%;
 }
 
-.icon-footer{
-    margin-right: 1%;
-}
+.icon-footer{ margin-right: 1%; }

@@ -4,9 +4,7 @@
 
   .nav-item{ display: none; }
 
-  .burguer{
-    padding: 0;
-    display: block;
+  .burguer{ padding: 0; display: block;
   }
 
   .burguer button{
@@ -24,10 +22,7 @@
     padding-bottom: 1rem;
   }
 
-  .mobile-menu .nav-item{
-    display: block;
-    padding-top: 1.2rem;
-  }
+  .mobile-menu .nav-item{ display: block; padding-top: 1.2rem; }
 
   .open{ display: block; }
 }
@@ -183,4 +178,3 @@
   
   #coded{ width: 42vw; }
 }
-

@@ -1,4 +1,4 @@
-//Seção do menu
+//--Seção do menu--
 //deixar o header aparecer apenas quando scroll up
 let mainPosition = window.scrollY;
 let header = document.querySelector('#header');
@@ -25,7 +25,7 @@ function menuShow(){ //função para alterar o menu pra hamburguinho
   }
 }
 
-//Seção dos vídeos
+//--Seção dos vídeos--
 const player = document.querySelectorAll('.slider');
 const btnPrev = document.querySelector('#prev-btn');
 const btnNext = document.querySelector('#next-btn');
@@ -67,7 +67,9 @@ function prevPlayer() {
 btnNext.addEventListener('click', nextPlayer)
 btnPrev.addEventListener('click', prevPlayer)
 
-//Alterar dark ligth mode
+
+
+//--Alterar dark ligth mode--
 let icon = document.querySelector('#mode-icon')
 
 function theme(){
