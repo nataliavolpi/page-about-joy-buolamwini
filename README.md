@@ -1,7 +1,7 @@
 # Página sobre Joy Buolamwini 
 
 Projeto Final do Curso de Programação Web para Iniciantes da WoMakersCode em parceria com a Potência Tech e iFood. O site é sobre uma mulher importante para a tecnologia. <br>
-Design responsivo e interativo, por meio do uso de algumas funcionalidades com JavaScript. https://nataliavolpi.github.io/page-about-joy-buolamwini/
+Design responsivo e interativo, por meio do uso de algumas funcionalidades com JavaScript. <br> https://nataliavolpi.github.io/page-about-joy-buolamwini/
 
 ## Demonstração:
 ![sitedesktop](./assets/gifs/Pagdesktop.gif)
