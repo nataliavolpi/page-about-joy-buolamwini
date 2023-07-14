@@ -22,18 +22,18 @@
 
 .dark-theme{
     --bodycolor: #212222;
-    --color0: #2c2823;
-    --color1: #f4eb6e;
+    --color0: #190f00;
+    --color1: #f99500;
     --color2: #601717;
     --color3: #f7e5b1;
     --color4: #fffef9;
-    --color5: #8e512e;
-    --color6: #f37c45;
-    --color7: #9e0d00;
-    --color8: #aa553d;
+    --color5: #af5b30;
+    --color6: #000000;
+    --color7: #d45500;
+    --color8: #4C0D06;
     --color9: #ffffff;
     --color10: #ffffff;
-    --color11: #3f4739;
+    --color11: #384033;
     --color12: #bd760c;
 }
 
