@@ -5,6 +5,8 @@ Design responsivo e interativo, por meio do uso de algumas funcionalidades com J
 
 ## Demonstração:
 ![sitedesktop](./assets/gifs/Pagdesktop.gif)
+![sitetablet](./assets/gifs/pagTablet.gif)
+![sitecel](./assets/gifs/pagCel.gif)
 
 ## Recursos utilizados:
 **<image src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="logo-HTML">** 
