@@ -1,55 +1,45 @@
 /*MENU HAMBURGUER*/
-@media screen and (max-width:768px) {
-  .nav-bar{
-    padding: .3rem;
-  }
+@media screen and (max-width: 764px) {
+  .nav-bar{ padding: .3rem; max-height: 3.2rem;}
 
-  .nav-item{
-      display: none;
-  }
-
-  .logo a{
-    font-size: 1em;
-  }
+  .nav-item{ display: none; }
 
   .burguer{
     padding: 0;
-    display: block; 
+    display: block;
   }
 
   .burguer button{
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 
-  .burguer button:active{
-    transform: translateY(1px);
-  }
+  .burguer button:active{ transform: translateY(1px);}
 
   .mobile-menu ul{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
   }
 
   .mobile-menu .nav-item{
-      display: block;
-      padding-top: 1.2rem;
-  }
-
-  .open{
     display: block;
+    padding-top: 1.2rem;
   }
+
+  .open{ display: block; }
 }
 
-/*CELULAR*/
-@media screen and (max-width: 768px) {
+/*CELULARES*/
+@media screen and (max-width: 764px) {
+  /*Header*/
+  .logo a{ font-size: .7em;}
 
-  body{
-    min-height: 100vh;
-}
+  .nav-link{ font-size: .9em;}
+
+  #mode-icon{ width: 14px;}
 
   /*Section One*/
   #secOne{
@@ -61,10 +51,7 @@
     min-height: 85vh;
   }
 
-  #joy1{
-    margin: auto;
-    width: 85vw;
-  }
+  #joy1{ margin: auto; width: 85vw; }
 
   .caixa-info{
     top: -1rem;
@@ -74,15 +61,9 @@
     height: 9rem;
   }
 
-  .caixa-info h1 {
-    font-size: .98rem;
-    margin: 1rem 0;
-  }
+  .caixa-info h1 { font-size: .98rem; margin: 1rem 0; }
 
-  .caixa-info h2{
-    font-size: .80rem;
-    margin: 1rem 0;
-  }
+  .caixa-info h2{ font-size: .65rem; margin: 1rem 0; }
 
   .caixa-info .btnSaibaMais{
     width: 5.2rem;
@@ -91,7 +72,7 @@
     margin: 0;
   }
 
-  /*Section Two*/
+/*Section Two*/
 #secTwo{
   margin: 0;
   display: flex;
@@ -107,20 +88,18 @@
 }
 
 .sobre-container p{
-  font-size: .769rem;
+  font-size: .8rem;
   font-weight: normal;
+  max-width: 17rem;
+  margin: auto;
+  letter-spacing: 0.01rem;
+  line-height: 1.4;
 }
 
-.sobre-img{
-  margin: 1rem 0;
-  padding: 2rem;
-}
+.sobre-img{ margin: 1rem 0; padding: 2rem; }
 
 /*Section Three*/
-#secThree{
-  display: flex;
-  flex-direction: column;
-}
+#secThree{ display: flex; flex-direction: column;}
 
 .texto-coded{
   margin: 0;
@@ -132,10 +111,7 @@
   margin-bottom: 0.01rem;
 }
 
-.texto-coded p{
-  width: 16rem;
-  font-size: .88rem;
-}
+.texto-coded p{ width: 16rem; font-size: .88rem;}
 
 #coded{
   margin: 0;
@@ -144,14 +120,12 @@
 }
 
 /*Section Four*/
-#org-img{
-  margin-top: 50%;
-}
+#org-img{ margin-top: 50%;}
 
 .ajl{
   width: 16rem;
   height: 40vh;
-  font-size: .88rem;
+  font-size: .87rem;
   font-weight: normal;
   flex-grow: 2;
 }
@@ -164,34 +138,21 @@
   align-content: center;
 }
 
-.player, .slider, .slider.show{
-  width: 18.3rem;
-  height: fit-content;
-}
+.player, .slider, .slider.show{ width: 15rem; height: fit-content; }
 
-#prev-btn, #next-btn{
-  margin: 0;
-  padding: 0;
-}
+#prev-btn, #next-btn{ margin: 0; padding: 0;}
 
   /*Rodapé*/
-  footer > p{
-    font-size: .8rem;
-    margin-right: 5%;
-  }
+  footer > p{ font-size: .7rem; margin-right: 5%;}
   
-  .icon-footer{
-    margin-right: 1.2%;
-  }
+  .icon-footer{ height: 5%; margin-right: 1.2%; }
 
 }
 
 /*TABLET*/
-@media screen and (min-width: 768px) and (max-width: 1120px) {
+@media screen and (min-width: 765px) and (max-width: 1120px) {
   /*Section One*/
-  #joy1{
-    width: 63vw;
-  }  
+  #joy1{ width: 63vw; }  
 
   .caixa-info{
     padding: 1.06rem 1.44rem;
@@ -200,40 +161,26 @@
     height: fit-content;
   }
 
-  .caixa-info h1 {
-    font-size: 1.6rem;
-  }
+  .caixa-info h1 { font-size: 1.6rem; }
 
-  .caixa-info h2{
-    font-size: 1rem;
-  }
+  .caixa-info h2{ font-size: 1rem; }
 
   /*Section Two*/
-  #joy2{
-    width: 35vw;
-  }
+  #joy2{ width: 35vw; }
 
   .sobre-container{
-    margin: 0 3%;
-    height: auto;
+    margin: 0 3%; 
+    height: auto; 
+    width: 45vw; 
   }
 
-  .sobre-container p{
-    font-size: 100%;
-  }
+  .sobre-container p{ font-size: 100%; width: auto;}
 
   /*Section Three*/
-  .texto-coded{
-    margin: 0;
-  }
+  .texto-coded{ margin: 0; }
 
-  .texto-coded p{
-    width: 25rem;
-    font-size: 1rem;
-  }
+  .texto-coded p{ width: 25rem; font-size: 1rem; }
   
-  #coded{
-    width: 42vw;
-  }
+  #coded{ width: 42vw; }
 }
 

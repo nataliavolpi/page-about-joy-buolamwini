@@ -17,22 +17,24 @@
     --color9: #ffffff;
     --color10: #000000;
     --color11: #FAD49A;
+    --color12: #F4DAC7;
 }
 
 .dark-theme{
     --bodycolor: #212222;
-    --color0: #363432;
+    --color0: #2c2823;
     --color1: #f4eb6e;
-    --color2: #9b4433;
+    --color2: #601717;
     --color3: #f7e5b1;
     --color4: #fffef9;
     --color5: #8e512e;
     --color6: #f37c45;
     --color7: #9e0d00;
     --color8: #aa553d;
-    --color9: #f16800;
+    --color9: #ffffff;
     --color10: #ffffff;
     --color11: #3f4739;
+    --color12: #bd760c;
 }
 
 *{
@@ -177,7 +179,7 @@ header{
     font-family: var(--font2);
     width: 6.25rem;
     height: 1.5625rem;
-    background-color: var(--color0);
+    background-color: var(--color12);
     color: var(--color4);
     font-size: 0.85rem;
     font-weight: 700;
